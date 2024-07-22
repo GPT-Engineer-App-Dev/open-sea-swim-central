@@ -1,14 +1,13 @@
-import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 
 const GalleryPage = () => {
-  const [images] = useState([
+  const images = [
     { src: '/images/gallery-preview-1.jpg', alt: 'Group of open sea swimmers' },
     { src: '/images/gallery-preview-2.jpg', alt: 'Lone swimmer in calm waters' },
     { src: '/images/gallery-preview-3.jpg', alt: 'Swimmers preparing for an event' },
     { src: '/images/gallery-preview-4.jpg', alt: 'Aerial view of open sea swimmers' },
     { src: '/images/hero-background.jpg', alt: 'Open sea swimming scene with sunset' },
-  ]);
+  ];
 
   return (
     <div className="container mx-auto px-4 py-8">

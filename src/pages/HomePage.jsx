@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url("/placeholder.svg")'}}>
+      <section className="relative h-[60vh] bg-cover bg-center flex items-center justify-center" style={{backgroundImage: 'url("/images/hero-background.jpg")'}}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Open Sea Swimming</h1>
@@ -63,8 +63,8 @@ const HomePage = () => {
             {[1, 2, 3, 4].map((image) => (
               <img
                 key={image}
-                src="/placeholder.svg"
-                alt={`Gallery preview ${image}`}
+                src={`/images/gallery-preview-${image}.jpg`}
+                alt={`Open sea swimming preview ${image}`}
                 className="w-full h-48 object-cover rounded-lg"
               />
             ))}
